@@ -12,7 +12,7 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'e8dfcff5-4f3b-4468-945c-606b1d667bf4'
   imageRepository: 'pacteranewrepo'
-  containerRegistry: 'aksimage460.azurecr.io'
+  containerRegistry: 'containerRegistry460.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/DemoBlazorServerApp/Dockerfile'
   tag: '$(Build.BuildId)'
 

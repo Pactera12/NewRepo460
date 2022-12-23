@@ -6,7 +6,7 @@ EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["DemoBlazorServerApp/DemoBlazorServerApp.csproj", "DemoBlazorServerApp/"]
+COPY ["./DemoBlazorServerApp/DemoBlazorServerApp.csproj", "DemoBlazorServerApp/"]
 RUN dotnet restore "DemoBlazorServerApp/DemoBlazorServerApp.csproj"
 COPY . .
 WORKDIR "/src/DemoBlazorServerApp"
